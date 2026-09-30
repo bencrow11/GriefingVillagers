@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "griefingvillagers",
+  "version": "${version}",
+  "name": "GriefingVillagers",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/griefingvillagers/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.bencrow11.griefingvillagers.client.GriefingvillagersDataGenerator"
+    ],
+    "main": [
+      "com.bencrow11.griefingvillagers.Griefingvillagers"
+    ]
+  },
+  "mixins": [
+    "griefingvillagers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
